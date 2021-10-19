@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+html {
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    width: 100%;
+    font-weight: 400;
+}
+
+li {
+    list-style: none;
+}
+
+.col {
+    position: relative;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+
+.container {
+    height: 390px;
+    /* width: 100%; */
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 0 354px;
+    padding: 0 15px; */
+}
+
+.header {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 48px 15px;
+}
+
+.form-create {
+    margin-bottom: 16px!important;
+}
+
+.form {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 3px rgb(0 123 255 / 25%);
+    background-color: #fff;
+    outline: 0;
+    color: #495057;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    /* width: 630px; */
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 16px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    /* transition: 0.15s; */
+}
+
+.wrapper-list-group {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.list-group-item {
+    align-items: center;
+    display: flex;
+    position: relative;
+    padding: 12px 20px;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.list-group-item:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.input-text {
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+}
+
+.text {
+    width: 100%;
+
+}
+
+.input-text:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.input-text:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgb(0 123 255 / 25%);
+    border-radius: 4px;
+    cursor: text;
+}
+
+/* .focused:focus {
+    outline: 0;
+    box-shadow: 0 0 0 3px rgb(0 123 255 / 25%);
+} */
+
+.btn-edit:focus {
+    box-shadow: 0 0 0 3px rgb(0 123 255 / 50%);
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+    display: inline-block;
+    font-weight: 400;
+    padding: 6px 12px;
+    line-height: 1.5;
+    border-radius: 4px;
+    font-size: 13px;
+    vertical-align: middle; /*can chinh theo chieu doc cua mot phan tu*/
+}
+
+.btn-text {
+    text-align: left;
+    box-shadow: none;
+    flex-grow: 1;
+}
+
+.btn-edit:hover {
+    color: #fff;
+    background-color: #007bff;;
+}
+
+.btn-edit {
+    text-align: center;
+    margin-left: 8px;
+    color: #007bff;
+}
+
+.btn-trash:hover {
+    color: #fff;
+    background-color: #dc3545;;
+}
+
+.btn-trash {
+    text-align: center;
+    color: #dc3545;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.editing {
+    text-decoration: none;
+}
+
+.btn-edit > .completed,
+.btn-trash > .completed {
+    text-decoration: none;
+}
+
+
+@media (min-width: 720px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 576px;
+    }
+
+    .wrapper-list-group {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+}
